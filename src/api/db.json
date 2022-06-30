@@ -1,0 +1,76 @@
+{
+  "teams": [
+    {
+      "id": 1,
+      "name": "e-commerce",
+      "members": [
+        {
+          "id": 1,
+          "name": "juan1",
+          "role": "Project leader",
+          "img": "https://thumbs.dreamstime.com/b/programador-de-dibujos-animados-en-el-trabajo-desarrollador-web-que-trabaja-port%C3%A1tiles-la-oficina-concepto-programaci%C3%B3n-proceso-164917430.jpg"
+        },
+        {
+          "id": 2,
+          "name": "juan2",
+          "role": "Engineering Architect",
+          "img": "https://thumbs.dreamstime.com/b/estilo-de-dibujos-animados-iconos-para-port%C3%A1tiles-programaci%C3%B3n-femenina-icono-port%C3%A1til-chica-caricatura-programando-vectorial-190094896.jpg"
+        },
+        {
+          "id": 3,
+          "name": "juan3",
+          "role": "Account Manager",
+          "img": "https://thumbs.dreamstime.com/b/estilo-de-caricatura-icono-programaci%C3%B3n-chica-sonriente-programando-vector-para-el-dise%C3%B1o-web-aislado-en-fondo-blanco-190094994.jpg"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "reppairs-app",
+      "members": [
+        {
+          "id": 4,
+          "name": "juan4",
+          "role": "Project leader",
+          "img": "https://thumbs.dreamstime.com/b/estilo-de-dibujos-animados-iconos-programadores-ni%C3%B1as-icono-del-programador-caricatura-un-vectorial-para-el-dise%C3%B1o-web-aislado-195717879.jpg"
+        },
+        {
+          "id": 5,
+          "name": "juan5",
+          "role": "Engineering Architect",
+          "img": "https://thumbs.dreamstime.com/b/estilo-de-dibujos-animados-iconos-trabajo-independiente-icono-caricatura-del-vector-freelancer-para-el-dise%C3%B1o-web-aislado-en-195717911.jpg"
+        },
+        {
+          "id": 6,
+          "name": "juan6",
+          "role": "Account Manager",
+          "img": "https://i.pinimg.com/474x/65/01/a9/6501a9752b915b8bb6274fb157a23bd1.jpg"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "bank-app",
+      "members": [
+        {
+          "id": 7,
+          "name": "juan7",
+          "role": "Project leader",
+          "img": "https://img.freepik.com/vector-gratis/adolescente-comunicandose-amigo-computadora-camara-video-personaje-dibujos-animados-plano-aislado_316839-1163.jpg"
+        },
+        {
+          "id": 8,
+          "name": "juan8",
+          "role": "Engineering Architect",
+          "img": "https://thumbs.dreamstime.com/b/ni%C3%B1o-de-dibujos-animados-estudiando-en-casa-con-computadora-y-libros-sobre-el-fondo-la-ventana-escolar-escribiendo-para-los-178316361.jpg"
+        },
+        {
+          "id": 9,
+          "name": "juan9",
+          "role": "Account Manager",
+          "img": "https://img.freepik.com/vector-gratis/nino-estudiando-educacion-linea-casa-ilustracion-vectorial-dibujos-animados-estudiante-computadora-escritorio-lugar-trabajo-haciendo-tarea-navegando-internet-e-learning-concepto-leccion-escolar-proceso-aprendizaje-nino-alumno_311563-503.jpg"
+        }
+      ]
+    }
+  ]
+}
