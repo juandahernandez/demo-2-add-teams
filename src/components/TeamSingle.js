@@ -1,14 +1,11 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { useModal } from "../hooks/useModal";
+import MemberForm from "./MemberForm";
 import Modal from "./Modal";
 import "./TeamSingle.css";
 
 const TeamSingle = ({ data, setDataToEdit, deleteData }) => {
   const [isOpenForm, openForm, closeForm] = useModal(false);
-
-  useEffect(() => {
-    console.log(data);
-  }, []);
   return (
     <div>
       <h2>Teams</h2>
@@ -30,7 +27,9 @@ const TeamSingle = ({ data, setDataToEdit, deleteData }) => {
                   </div>
                 ))
               ) : (
-                <button onClick={openForm}>agregar miembros</button>
+                <button className="add-member" onClick={openForm}>
+                  Agregar miembros
+                </button>
               )}
             </div>
             <div className="buttons-team">
@@ -47,15 +46,8 @@ const TeamSingle = ({ data, setDataToEdit, deleteData }) => {
         <h3>no hay equipos</h3>
       )}
       <Modal isOpen={isOpenForm} closeModal={closeForm}>
-        <form>
-          <input type="text" name="name" placeholder="name" />
-          <input type="text" name="role" placeholder="role" />
-          <input type="text" name="imagen" placeholder="imagen" />
-          <input type="submit" value="Enviar" />
-          <input type="reset" value="Limpiar" />
-        </form>
+        <MemberForm />
       </Modal>
-      <button onClick={openForm}>abrir</button>
     </div>
   );
 };

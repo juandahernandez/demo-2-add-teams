@@ -28,6 +28,8 @@
 
 .member-single p {
   text-align: center;
+  font-size: 15px;
+  font-weight: 500;
 }
 
 .buttons-team {
@@ -50,4 +52,14 @@
   background: white;
   border: none;
   margin: 5px;
+}
+
+.add-member{
+  margin: auto;
+  border: none;
+  border-radius: 5%;
+  padding: 5px;
+  font-size: 15px;
+  font-weight: 600;
+  background-color: #98e99d;
 }

@@ -1,0 +1,35 @@
+.team-form {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+}
+
+
+.input-name {
+  background: rgba(0, 0, 0, 0.7);
+  border: none;
+  outline: none;
+  border-bottom: 3px solid #15f4ee;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 2px;
+  color: #fff;
+}
+
+.input-send {
+    font-weight: 700;
+    padding: 10px;
+    background: #15f4ee;
+    border: none;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.input-clean {
+    font-weight: 700;
+    padding: 10px;
+    background: #15f4ee;
+    border: none;
+    border-radius: 10px;
+    margin: 10px;
+}

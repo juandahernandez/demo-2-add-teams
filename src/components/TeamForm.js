@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./TeamForm.css";
 
 const initialForm = {
   id: null,
@@ -36,18 +37,24 @@ const TeamForm = ({ createData, updateData, dataToEdit, setDataToEdit }) => {
     setDataToEdit(null);
   };
   return (
-    <div>
-      <h3>{dataToEdit ? "Editar" : "Agregar"}</h3>
+    <div className="team-form">
+      <h5>{dataToEdit ? "Update team" : "Add team"}</h5>
       <form onSubmit={handleSubmit}>
         <input
+          className="input-name"
           type="text"
           name="name"
           placeholder="name team"
           onChange={handleChange}
           value={form.name}
         />
-        <input type="submit" value="Enviar" />
-        <input type="reset" value="Limpiar" onClick={handleReset} />
+        <input className="input-send" type="submit" value="Enviar" />
+        <input
+          className="input-clean"
+          type="reset"
+          value="Limpiar"
+          onClick={handleReset}
+        />
       </form>
     </div>
   );

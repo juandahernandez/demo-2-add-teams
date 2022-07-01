@@ -4,6 +4,7 @@ import Loader from "./Loader";
 import Message from "./Message";
 import TeamForm from "./TeamForm";
 import TeamSingle from "./TeamSingle";
+import "./TeamApi.css";
 
 const TeamApi = () => {
   const [db, setDb] = useState(null);
@@ -81,8 +82,8 @@ const TeamApi = () => {
   };
 
   return (
-    <div>
-      <h2>Teams Apsp</h2>
+    <div className="components-container">
+      <h2>Teams App</h2>
       <TeamForm
         createData={createData}
         updateData={updateData}
