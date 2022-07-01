@@ -1,11 +1,11 @@
 import "./App.css";
-import TeamsApi from "./components/TeamsApi";
+import TeamApi from "./components/TeamApi";
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <h1>temas with server</h1>
-      <TeamsApi />
+      <TeamApi />
     </div>
   );
 }

@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
 const initialForm = {
   id: null,
   name: "",
+  members: [],
 };
 
 const TeamForm = ({ createData, updateData, dataToEdit, setDataToEdit }) => {
@@ -12,6 +13,7 @@ const TeamForm = ({ createData, updateData, dataToEdit, setDataToEdit }) => {
     setForm({
       ...form,
       [e.target.name]: e.target.value,
+      [e.target.members]: e.target.value,
     });
   };
   const handleSubmit = (e) => {
@@ -35,7 +37,7 @@ const TeamForm = ({ createData, updateData, dataToEdit, setDataToEdit }) => {
   };
   return (
     <div>
-      <h3>add team</h3>
+      <h3>{dataToEdit ? "Editar" : "Agregar"}</h3>
       <form onSubmit={handleSubmit}>
         <input
           type="text"

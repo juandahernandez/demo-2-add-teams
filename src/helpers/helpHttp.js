@@ -13,11 +13,9 @@ export const helpHttp = () => {
       : defaultHeader;
 
     options.body = JSON.stringify(options.body) || false;
-    if (!options.body) {
-      delete options.body;
-    }
+    if (!options.body) delete options.body;
 
-    setTimeout(() => controller.abort(), 5000);
+    setTimeout(() => controller.abort(), 3000);
 
     return fetch(endpoint, options)
       .then((res) =>
@@ -30,24 +28,24 @@ export const helpHttp = () => {
             })
       )
       .catch((err) => err);
-
-    const get = (url, options = {}) => customFetch(url, options);
-
-    const post = (url, options = {}) => {
-      options.method = "POST";
-      return customFetch(url, options);
-    };
-
-    const put = (url, options = {}) => {
-      options.method = "PUT";
-      return customFetch(url, options);
-    };
-
-    const del = (url, options = {}) => {
-      options.method = "DELETE";
-      return customFetch(url, options);
-    };
-
-    return { get, post, put, del };
   };
+
+  const get = (url, options = {}) => customFetch(url, options);
+
+  const post = (url, options = {}) => {
+    options.method = "POST";
+    return customFetch(url, options);
+  };
+
+  const put = (url, options = {}) => {
+    options.method = "PUT";
+    return customFetch(url, options);
+  };
+
+  const del = (url, options = {}) => {
+    options.method = "DELETE";
+    return customFetch(url, options);
+  };
+
+  return { get, post, put, del };
 };
