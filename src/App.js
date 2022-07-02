@@ -1,5 +1,5 @@
 import "./App.css";
-import TeamApi from "./components/TeamApi";
+import TeamApi from "./components/team/TeamApi";
 
 function App() {
   return (

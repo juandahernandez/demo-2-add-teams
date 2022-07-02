@@ -35,6 +35,18 @@
     
 }
 
+.input-img {
+    background: rgba(0, 0, 0, 0.7);
+    border: none;
+    outline: none;
+    border-bottom: 3px solid #15f4ee;
+    padding: 10px;
+    border-radius: 2px;
+    font-weight: 600;
+    color: #fff;
+    width: 80%;
+}
+
 .input-clean-member {
     font-weight: 700;
     padding: 10px;
@@ -48,4 +60,12 @@
 .render-img img{
     width: 100px;
     border-radius: 50%;
+}
+
+@media(max-width:767px){
+    .form-member {
+        width: 90vw;
+        width: 30vh;
+        
+    }
 }

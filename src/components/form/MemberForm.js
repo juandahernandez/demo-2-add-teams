@@ -54,6 +54,7 @@ const MemberForm = ({ data, closeForm }) => {
         <option value="Account Manager">Account Manager</option>
       </select>
       <input
+        className="input-img"
         type="file"
         multiple
         onChange={(e) => {

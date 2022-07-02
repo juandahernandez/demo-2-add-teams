@@ -1,7 +1,9 @@
 import React from "react";
-import { useModal } from "../hooks/useModal";
-import MemberForm from "./MemberForm";
-import Modal from "./Modal";
+import { useModal } from "../../hooks/useModal";
+import MemberForm from "../form/MemberForm";
+import Modal from "../modal/Modal";
+import "./MembersItem.css";
+
 const MembersItem = ({ item, index, deleteData, setDataToEdit }) => {
   const [isOpenForm, openForm, closeForm] = useModal(false);
   return (

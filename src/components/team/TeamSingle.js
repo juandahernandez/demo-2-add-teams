@@ -1,12 +1,11 @@
 import React from "react";
-
-import MembersItem from "./MembersItem";
+import MembersItem from "../member/MembersItem";
 
 import "./TeamSingle.css";
 
 const TeamSingle = ({ data, setDataToEdit, deleteData }) => {
   return (
-    <div>
+    <div className="cart-tema-container">
       <h2>Teams</h2>
       {data.map((item, index) => (
         <div>

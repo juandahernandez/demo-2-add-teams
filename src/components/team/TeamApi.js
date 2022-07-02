@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { helpHttp } from "../helpers/helpHttp";
-import Loader from "./Loader";
-import Message from "./Message";
-import TeamForm from "./TeamForm";
-import TeamSingle from "./TeamSingle";
 import "./TeamApi.css";
+import Loader from "../loader/Loader";
+import TeamForm from "../form/TeamForm";
+import Message from "../Message";
+import { helpHttp } from "../../helpers/helpHttp";
+import TeamSingle from "./TeamSingle";
 
 const TeamApi = () => {
   const [db, setDb] = useState(null);
