@@ -68,3 +68,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+prueba react con funcionalidad para agregar equipos, los equipos deben de tener tres miembros, con diferentes roles y su respectiva imagen, para inicializar clonar repositorio, instalar dependencias con npm i , si no se insatla json-server , instalarlo con el comando npm i -g json-server, inicializar proyecto con npm start, y en una nueva terminal, inicializar el server con npm run fake-api
+
