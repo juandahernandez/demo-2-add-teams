@@ -14,7 +14,6 @@ const TeamForm = ({ createData, updateData, dataToEdit, setDataToEdit }) => {
     setForm({
       ...form,
       [e.target.name]: e.target.value,
-      [e.target.members]: e.target.value,
     });
   };
   const handleSubmit = (e) => {

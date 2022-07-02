@@ -27,15 +27,15 @@ const TeamApi = () => {
   }, [url]);
 
   const createData = (data) => {
-    data.id = Date.now();
-
+    const body = data;
     let options = {
-      body: data,
+      body,
       headers: { "content-type": "application/json" },
     };
 
     api.post(url, options).then((res) => {
       if (!res.err) {
+        console.log(res);
         setDb([...db, res]);
       } else {
         setError(res);
@@ -99,9 +99,11 @@ const TeamApi = () => {
       )}
       {db && (
         <TeamSingle
+          key={db.id}
           data={db}
           setDataToEdit={setDataToEdit}
           deleteData={deleteData}
+          setDb={setDb}
         />
       )}
     </div>
