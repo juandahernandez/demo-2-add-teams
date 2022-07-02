@@ -22,12 +22,29 @@ const MemberForm = ({ data, closeForm }) => {
       }
     }
 
+    const { name, role } = membersData;
+
+    if (
+      name.trim().length === 0 ||
+      imageList.length === 0 ||
+      role.trim().length === 0
+    ) {
+      alert("Ingresar todos los campos requeridos para continuar");
+      return;
+    }
+
     data.members.push({
       name: membersData.name,
       img: imageList,
       role: membersData.role,
     });
+    setImageList([]);
 
+    setMembersData({
+      name: "",
+      img: "",
+      role: "",
+    });
     closeForm();
   };
 
@@ -38,6 +55,7 @@ const MemberForm = ({ data, closeForm }) => {
         type="text"
         name="name"
         placeholder="name"
+        value={membersData.name}
         onChange={({ target }) =>
           setMembersData({ ...membersData, name: target.value })
         }
@@ -45,10 +63,12 @@ const MemberForm = ({ data, closeForm }) => {
       <select
         className="input-name-member"
         name="role"
+        value={membersData.role}
         onChange={({ target }) =>
           setMembersData({ ...membersData, role: target.value })
         }
       >
+        <option></option>
         <option value="Project leader">Project leader</option>
         <option value="Engineering Architect">Engineering Architect</option>
         <option value="Account Manager">Account Manager</option>
@@ -57,12 +77,12 @@ const MemberForm = ({ data, closeForm }) => {
         className="input-img"
         type="file"
         multiple
+        value={membersData.img}
         onChange={(e) => {
           const files = e.target.files;
           const fileList = [];
 
           Object.keys(files).forEach((index) => {
-            console.log(files[index]);
             fileList.push(URL.createObjectURL(files[index]));
           });
 
@@ -76,7 +96,6 @@ const MemberForm = ({ data, closeForm }) => {
           value="Enviar"
           onClick={sendData}
         />
-        <input className="input-clean-member" type="reset" value="Limpiar" />
       </div>
       <div className="render-img">
         {imageList &&
