@@ -11,7 +11,6 @@ const TeamSingle = ({ data, setDataToEdit, deleteData }) => {
         <div>
           <MembersItem
             item={item}
-            index={index}
             key={index}
             setDataToEdit={setDataToEdit}
             deleteData={deleteData}

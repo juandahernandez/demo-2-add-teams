@@ -4,7 +4,7 @@ import MemberForm from "../form/MemberForm";
 import Modal from "../modal/Modal";
 import "./MembersItem.css";
 
-const MembersItem = ({ item, index, deleteData, setDataToEdit }) => {
+const MembersItem = ({ item, deleteData, setDataToEdit }) => {
   const [isOpenForm, openForm, closeForm] = useModal(false);
   return (
     <div className="team-container">
@@ -15,7 +15,7 @@ const MembersItem = ({ item, index, deleteData, setDataToEdit }) => {
         </Modal>
         {item.members.map((member, index) => (
           <div className="member-single" key={index + item.id}>
-            <img src={member.img} />
+            <img src={member.img} alt={member.name} />
             <div>
               <p>{member.name}</p>
               <p> {member.role}</p>

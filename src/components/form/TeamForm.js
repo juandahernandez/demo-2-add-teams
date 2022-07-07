@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./TeamForm.css";
 
 const initialForm = {
@@ -9,6 +9,14 @@ const initialForm = {
 
 const TeamForm = ({ createData, updateData, dataToEdit, setDataToEdit }) => {
   const [form, setForm] = useState(initialForm);
+
+  useEffect(() => {
+    if (dataToEdit) {
+      setForm(dataToEdit);
+    } else {
+      setForm(initialForm);
+    }
+  }, [dataToEdit]);
 
   const handleChange = (e) => {
     setForm({
